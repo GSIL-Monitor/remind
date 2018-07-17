@@ -1,0 +1,2 @@
+apidoc -i app/Http/Controllers/Api -o public/apidoc   生成api文档
+apidoc -i app/Http/Controllers/Api -o ./../apidoc
