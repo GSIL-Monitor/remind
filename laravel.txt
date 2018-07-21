@@ -6,6 +6,9 @@ Laravel 会自动为每个活跃用户的会话生成一个 CSRF「令牌」。�
 
 
 laravel admin 后台数据库备份：
-mysqldump -t shop admin_menu admin_permissions admin_role_menu admin_role_permissions admin_role_users admin_roles admin_user_permissions admin_users > database/admin.sql
+mysqldump -t shop shop_admin_menu shop_admin_permissions shop_admin_role_menu shop_admin_role_permissions shop_admin_role_users shop_admin_roles shop_admin_user_permissions shop_admin_users > database/admin.sql
 
 mysql shop < database/admin.sql
+
+
+php artisan migrate:refresh --seed
