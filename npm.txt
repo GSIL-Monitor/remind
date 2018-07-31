@@ -1,7 +1,3 @@
 apidoc -i app/Http/Controllers/Api -o public/apidoc   生成api文档
 apidoc -i app/Http/Controllers/Api -o ./../apidoc
-
-
-
-
-$2y$10$KOx4vXQ/fvaGhn9T3S/Qee//fOzSeC2tbqmhGdzMAw.NlojB1rhny
+php artisan storage:link	
