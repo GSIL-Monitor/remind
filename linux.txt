@@ -1,1 +1,0 @@
-chrom 777 -R folder   文件夹权限
