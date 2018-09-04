@@ -26,3 +26,5 @@ vue git 强制提交：git add . && git commit --no-verify -m "代码规范强�
 php artisan make:seeder UsersTableSeeder
 
 php artisan storage:link
+
+composer dump-autoload
