@@ -19,6 +19,7 @@ apidoc -i app/Http/Controllers/Api -o ./../apidoc
 php artisan storage:link	
 //中文语言包
 composer require overtrue/laravel-lang
+config app => 'locale' => 'zh-CN',
 
 
 vue git 强制提交：git add . && git commit --no-verify -m "代码规范强制提交测试"
