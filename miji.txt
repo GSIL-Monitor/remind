@@ -29,3 +29,5 @@ php artisan make:seeder UsersTableSeeder
 php artisan storage:link
 
 composer dump-autoload
+
+我的openid:ovFah00RaNjydLq8NZt9BedcDJEg
