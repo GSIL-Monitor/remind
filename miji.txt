@@ -35,4 +35,11 @@ composer dump-autoload
 sudo /etc/init.d/vsftpd restart
 
 ubuntu 16.04:
-安装ftp: sudo apt-get install vsftpd
+ftp: 
+sudo apt-get install vsftpd
+sudo vim /etc/vsftpd.conf
+sudo /etc/init.d/vsftpd start
+sudo /etc/init.d/vsftpd stop
+sudo /etc/init.d/vsftpd restart
+nginx:
+sudo vim /etc/nginx/nginx.conf
