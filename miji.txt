@@ -49,3 +49,11 @@ sudo vim /etc/nginx/nginx.conf
 sudo su //进入root权限
 
 bind-address = 127.0.0.1
+
+http://139.199.203.126/
+
+sudo /etc/init.d/redis-server restart
+
+
+php artisan cache:clear
+php artisan config:clear
