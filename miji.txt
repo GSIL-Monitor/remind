@@ -4,56 +4,93 @@ mysqldump -t shop shop_admin_menu shop_admin_permissions shop_admin_role_menu sh
 
 mysql shop < database/admin.sql
 
-
-laravel 数据迁移：
-生成迁移：php artisan make:migration create_users_table
-php artisan migrate:refresh --seed
-php artisan migrate
+laravel ：
+数据迁移-生成迁移：php artisan make:migration create_users_table
+数据迁移-运行迁移：php artisan migrate:refresh --seed
+	              php artisan migrate
+laravel中文语言包：composer require overtrue/laravel-lang
+	             config/app => 'locale' => 'zh-CN'
+生成填充器：php artisan make:seeder UsersTableSeeder
+整理自动加载类：composer dump-autoload
+清理缓存：php artisan cache:clear
+	php artisan config:clear
 
 linux
-chrom 777 -R folder   文件夹权限
+文件夹权限：chrom 777 -R folder   
+
+php
+(linux环境)生成软连接：php artisan storage:link
 
 npm
-apidoc -i app/Http/Controllers/Api -o public/apidoc   生成api文档
-apidoc -i app/Http/Controllers/Api -o ./../apidoc
-php artisan storage:link	
-//中文语言包
-composer require overtrue/laravel-lang
-config app => 'locale' => 'zh-CN',
+apidoc：-i app/Http/Controllers/Api -o public/apidoc   生成api文档
+apidoc：-i app/Http/Controllers/Api -o ./../apidoc
+
+git
+git 强制提交：git add . && git commit --no-verify -m "代码规范强制提交测试"
 
 
-vue git 强制提交：git add . && git commit --no-verify -m "代码规范强制提交测试"
-
-php artisan make:seeder UsersTableSeeder
-
-php artisan storage:link
-
-composer dump-autoload
 
 我的openid:ovFah00RaNjydLq8NZt9BedcDJEg
 ovFah00RaNjydLq8NZt9BedcDJEg
 o0LBC1u2jkqxvffNKJrf4LRA3I5U
 
-sudo /etc/init.d/vsftpd restart
-
 ubuntu 16.04:
 ftp: 
-sudo apt-get install vsftpd
-sudo vim /etc/vsftpd.conf
-sudo /etc/init.d/vsftpd start
-sudo /etc/init.d/vsftpd stop
-sudo /etc/init.d/vsftpd restart
-nginx:
-sudo vim /etc/nginx/nginx.conf
+安装ftp：sudo apt-get install vsftpd
+配置ftp：sudo vim /etc/vsftpd.conf
+启动ftp：sudo /etc/init.d/vsftpd start
+停止ftp：sudo /etc/init.d/vsftpd stop
+重启ftp：sudo /etc/init.d/vsftpd restart
 
-sudo su //进入root权限
+nginx:
+安装nginx：apt-get -y install nginx
+配置nginx：sudo vim /etc/nginx/nginx.conf
+	  sudo vim /etc/nginx/sites-available/default
+启动nginx：service nginx start
+重新加载nginx：nginx -s reload
+
+php7.0：
+安装php7.0：apt-get -y install php7.0-fpm
+配置php7.0：vim /etc/php/7.0/fpm/php.ini
+重新加载 PHP-FPM：service php7.0-fpm reload
+安装php7.0各种模块：apt-get -y install php7.0-mysql php7.0-curl php7.0-gd php7.0-intl php-pear php-imagick php7.0-imap php7.0-mcrypt php-memcache  php7.0-pspell php7.0-recode php7.0-sqlite3 php7.0-tidy php7.0-xmlrpc php7.0-xsl php7.0-mbstring php-gettext
+
+mysql5.7：
+安装mysql：apt-get -y install mysql-server mysql-client
+mysql配置：sudo vim /etc/mysql/my.cnf
+使mysql允许远程访问：进入配置，注释 bind-address = 127.0.0.1
+重启mysql：service mysql restart
+
+radis:
+安装Redis服务器端：sudo apt-get install redis-server
+检查Redis服务器系统进程：ps -aux|grep redis
+通过启动命令检查Redis服务器状态：netstat -nlt|grep 6379
+通过启动命令检查Redis服务器状态：sudo /etc/init.d/redis-server status
+修改Redis的配置：sudo vi /etc/redis/redis.conf
+让Redis服务器被远程访问：sudo vi /etc/redis/redis.conf
+		        注释掉 => bind 127.0.0.1
+重启radis：sudo /etc/init.d/redis-server restart
+通过命令行客户端访问Redis：redis-cli
+基本的Redis客户端命令操作：set key1 "hello"
+		           get key1
+查看所有的key列表：keys *
+删除key1：del key1
+
+composer：
+安装composer：
+sudo apt-get install wget
+下载composer.phar：wget https://getcomposer.org/composer.phar
+重命名文件composer.phar 为 composer：mv composer.phar composer
+chmod +x composer
+sudo mv composer /usr/local/bin
+
+
+进入root权限：sudo su
 
 bind-address = 127.0.0.1
 
-http://139.199.203.126/
+腾讯云ip：139.199.203.126
 
-sudo /etc/init.d/redis-server restart
+启动radis：sudo /etc/init.d/redis-server restart
 
 
-php artisan cache:clear
-php artisan config:clear
