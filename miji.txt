@@ -91,6 +91,3 @@ bind-address = 127.0.0.1
 
 腾讯云ip：139.199.203.126
 
-启动radis：sudo /etc/init.d/redis-server restart
-
-
