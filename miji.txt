@@ -3,6 +3,7 @@ laravel admin 后台数据库备份：
 mysqldump -t shop shop_admin_menu shop_admin_permissions shop_admin_role_menu shop_admin_role_permissions shop_admin_role_users shop_admin_roles shop_admin_user_permissions shop_admin_users > database/admin.sql
 
 mysql shop < database/admin.sql
+生成事件和事件侦听器：php artisan event:generate
 
 laravel ：
 数据迁移-生成迁移：php artisan make:migration create_users_table
