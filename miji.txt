@@ -92,3 +92,8 @@ bind-address = 127.0.0.1
 
 腾讯云ip：139.199.203.126
 
+
+
+广播：
+appId: 3b6acaa28d2c2313
+key: 07255eee7b0ab0ba7f25972a7a91c794
