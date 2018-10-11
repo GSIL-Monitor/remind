@@ -97,3 +97,39 @@ bind-address = 127.0.0.1
 广播：
 appId: 3b6acaa28d2c2313
 key: 07255eee7b0ab0ba7f25972a7a91c794
+
+书签备份：
+在学习教程中，总是遇到的一些坑（记录一下解决方法）：
+https://laravel-china.org/articles/13277/in-learning-lessons-there-are-always-craters-recording-solutions
+支付宝沙箱：
+https://auth.alipay.com/login/ant_sso_index.htm?goto=https%3A%2F%2Fopenhome.alipay.com%2Fplatform%2FappDaily.htm%3Ftab%3Daccount
+websanova：
+https://github.com/websanova/vue-auth
+vue极验：
+https://blog.csdn.net/XiaoYi0215/article/details/79921967
+laravel中使用apidoc：
+https://blog.csdn.net/leedaning/article/details/51065765
+解决 Windows 系统使用 Homestead 运行 Laravel 本地项目响应缓慢问题：
+https://laravel-china.org/articles/9009/solve-the-slow-response-problem-of-windows-system-using-homestead-to-run-laravel-local-project
+apache2.4配置虚拟目录（windows）：
+https://www.cnblogs.com/seaBiscuit0922/p/5551371.html
+element UI 自定义传参的解决方法：
+https://blog.csdn.net/userkang/article/details/80481238
+vue-element-admin：
+https://panjiachen.github.io/vue-element-admin-site/zh/guide/
+Laravel 跨域解决方案：
+https://laravel-china.org/articles/6504/laravel-cross-domain-solution
+easywechat：
+https://www.easywechat.com/
+Ubuntu 16.04 LTS (LEMP) 安装 Nginx/PHP 7/MySQL 5.7：
+https://blog.csdn.net/u013308496/article/details/53998886
+ubuntu16.04 安装composer和 laravel：
+https://blog.csdn.net/yc1022/article/details/54580716
+远程连接Linux服务器mysql,2003错误 cant connect to mysql：
+https://www.jianshu.com/p/33dc3660d724
+Ubuntu 16.04安装Redis：
+https://www.cnblogs.com/zongfa/p/7808807.html
+animate.css：
+https://github.com/daneden/animate.css
+图标库：
+http://iconfont.cn/
