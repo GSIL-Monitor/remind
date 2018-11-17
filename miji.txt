@@ -14,17 +14,18 @@ laravel中文语言包：composer require overtrue/laravel-lang
 生成填充器：php artisan make:seeder UsersTableSeeder
 整理自动加载类：composer dump-autoload
 清理缓存：php artisan cache:clear
-	php artisan config:clear
+	php artisan config:clear 
 
 linux
-文件夹权限：chrom 777 -R folder   
+文件夹权限：chmod 777 -R folder   
 
-php
+php 
 (linux环境)生成软连接：php artisan storage:link
 
 npm
 apidoc：-i app/Http/Controllers/Api -o public/apidoc   生成api文档
 apidoc：-i app/Http/Controllers/Api -o ./../apidoc
+apidoc -i app/Http/Controllers -o public/apidoc
 
 git
 git 强制提交：git add . && git commit --no-verify -m "代码规范强制提交测试"
@@ -158,18 +159,23 @@ wx2b0acd11f824eeff
 2300445@qq.com
 jiqi0420
 
+xiaoqi 公众号
+xiaoqimp@gichey.com
+
+
+xiaoqi小程序
+xiaoqi@gichey.com
+ssh
+root
+密码
+jiqi@0420
+
 
 
 composer config -g repo.packagist composer https://packagist.laravel-china.org
 
-
-
-https://116.62.196.236:443/api/weixinGetPush
-
-
-
-
-location /wss/
+wss配置：
+ location /wss/
 	{
 		proxy_pass http://127.0.0.1:7272;
 		proxy_set_header X-Real-IP $remote_addr;
@@ -181,3 +187,51 @@ location /wss/
 		rewrite /wss/(.*) /$1 break;
 		proxy_redirect off;
 	}
+
+
+$request->user('api');
+
+fu125后台密码：jiqi2063
+
+
+宝塔后台账号：gichey Gichey52408
+
+http://gcp.gichey.com:51800
+
+
+新颜
+https://docs.xinyan.com/docs/spider-h5?token=ib04CEL1aZhI
+
+
+
+php artisan workman start --d
+
+
+
+服务器
+118.31.38.8 ssh：
+root Gichey52408
+
+
+
+rm -rf /var/log/httpd/access
+
+如果mysql连接遇到2003错误码：请放行3306端口
+
+新颜正式环境：
+商户号：8150716192
+私钥密码：419653
+
+https://docs.xinyan.com/docs/taobao?token=4vOnikEzPK81
+
+
+
+//supervisord
+https://github.com/Supervisor/supervisor/issues/121
+
+I solved this problem by starting the service:
+
+sudo service supervisord start
+After this you can run:
+
+sudo supervisorctl reload
