@@ -224,6 +224,14 @@ rm -rf /var/log/httpd/access
 
 https://docs.xinyan.com/docs/taobao?token=4vOnikEzPK81
 
+京东文档：
+https://docs.xinyan.com/docs/jingdong?token=s62OP0GNv1dZ
+
+京东sdk：
+https://docs.xinyan.com/docs/pc-sdk?token=w80uN2tppBMl
+
+新颜京东样例：
+https://www.xinyan.com/display/display-9.html
 
 
 //supervisord
@@ -235,3 +243,33 @@ sudo service supervisord start
 After this you can run:
 
 sudo supervisorctl reload
+
+supervisorctl命令：
+sudo supervisorctl reread 
+sudo supervisorctl update 
+sudo supervisorctl start laravel-worker:*
+supervisorctl stop all
+supervisorctl start all
+
+
+
+"timestamp": 1543402508266,
+"status": 404,
+"error": "Not Found",
+"message": "No message available",
+"path": "\/data\/carrier\/v3\/zip\/mobile\/"
+
+
+laravel 事务：
+DB::beginTransaction();
+DB::commit();
+DB::rollBack();
+
+阿里云 多头借贷：
+AppKey：25320468     AppSecret：0e3669c78fd2614e0b879a32a97cd945
+AppCode：6021301c1a804a668b634f529de904d4
+
+
+新颜行为雷达：https://docs.xinyan.com/docs/credit-behavior?token=CvfMdG0k4yeW
+
+全景雷达：https://docs.xinyan.com/docs/credit-all-v3?token=cS21W9YZ56b0
