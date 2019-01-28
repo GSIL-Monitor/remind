@@ -1,0 +1,11 @@
+房信线上测试地址：
+http://test-houtai.wofang.com/login
+
+u: 17717771777
+p: 123456
+
+
+房信内网主机账号信息：
+u: 17717771777
+p: wofang8989
+
