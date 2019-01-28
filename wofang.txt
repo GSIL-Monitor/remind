@@ -9,3 +9,8 @@ p: 123456
 u: 17717771777
 p: wofang8989
 
+ÏîÄ¿µØÖ·£ºhttp://gitlab.1fangxin.cn/fangxin-tech/erp
+
+username£ºfengpengyuan
+
+pw£º12345678
