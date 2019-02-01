@@ -1,0 +1,3 @@
+git 日常命令大全
+clone	=====>		git clone http://.../test.git folder
+add	=====>		git add .
