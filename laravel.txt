@@ -1,0 +1,6 @@
+laravel 常用命令大全
+
+phpstan
+vendor/bin/phpstan analyse src file
+github:
+https://github.com/phpstan/phpstan
