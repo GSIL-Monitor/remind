@@ -1,0 +1,1 @@
+navicat 设置timestamp默认值 CURRENT_TIMESTAMP
