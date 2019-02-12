@@ -1,0 +1,4 @@
+新建经纪人   ====>   app\Http\Controllers\Member\Organization\API\AgentAPIController.php
+
+
+oa  ===> oaSynchroPerson ===> 存入中间表 ====>  
